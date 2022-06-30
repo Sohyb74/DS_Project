@@ -9,6 +9,6 @@ students from taking the prerequisites.
 - C++
 - oop & Data Structure concepts
 - DataBase using sqlite
-- 
+
 # Screenshots
-![image](https://user-images.githubusercontent.com/{DS_Project/images/adminmenu.png}/{adminmenu.png})
+![image](https://github.com/[Sohyb74]/[DS_Project]/blob/[master]/login.png?raw=true)
