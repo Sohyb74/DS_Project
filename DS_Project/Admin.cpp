@@ -647,7 +647,7 @@ void Admin::undo() {
 	system("pause");
 	undo_preq.clear();
 }/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*THERE FUNCTIONS VIEW ALL COURSES OF STUDENT*/
+/*THESE FUNCTIONS VIEW ALL COURSES OF STUDENT*/
 void Admin::view_courses_of_stud() {
 	int stud_id;
 	cout << "Enter the ID for Student \n";
@@ -709,7 +709,7 @@ void Admin::view_stud_finished_courses(int id_) {
 	else
 		cout << student.get_f_name() << " " << student.get_s_name() << " " << student.get_th_name() << " Has NO Finished Courses\n";
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**********************************************************************************************************/
 /*THIS FUNCTION VIEW LIST OF STUDENTS IN SPECIFIC COURSE (PROGRESS & FINISHED)*/
 void Admin::view_studs_of_course() {
 	string course_name;
@@ -764,7 +764,7 @@ void Admin::view_studs_of_course() {
 	else
 		cout << "\nEnter a Correct Course Name\n";
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**********************************************************************************************************/
 void Admin::view_all_courses() {
 	int c = 1;
 	cout << "\t\t\t\t\tAll Courses...\n";
@@ -774,21 +774,21 @@ void Admin::view_all_courses() {
 	}
 	cout << "\n";
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**********************************************************************************************************/
 int Admin::last_id_stud() {
 	for (auto x : DataBase::students_map) {
 		idd_ = stoi(x.first);
 	}
 	return idd_;
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**********************************************************************************************************/
 void Admin::remove_from_prog(string cname, int idd) {
 	if (!check_row_repeated2(idd, cname)) {
 		DataBase::progress_vector.erase(DataBase::progress_vector.begin() + count_erase);
 	}
 	count_erase = 0;
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**********************************************************************************************************/
 int Admin::check_num_courses_can_add(int iid) {
 	int count = 0;
 	for (auto x : DataBase::progress_vector) {
