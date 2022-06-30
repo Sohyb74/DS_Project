@@ -11,4 +11,4 @@ students from taking the prerequisites.
 - DataBase using sqlite
 
 # Screenshots
-![image](https://github.com/[Sohyb74]/[DS_Project]/blob/[master]/login.png?raw=true)
+![image]([images/adminmenu.png](https://github.com/Sohyb74/DS_Project/blob/master/DS_Project/images/adminmenu.png?raw=true))
